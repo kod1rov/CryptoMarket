@@ -6,5 +6,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface CryptoCurrencyService {
 
-    suspend fun getCryptoData() : Flow<NetworkResult<CryptoCurrencyResponse>>
+    suspend fun getCryptoData() : NetworkResult<CryptoCurrencyResponse>
 }

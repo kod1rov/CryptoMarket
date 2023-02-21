@@ -11,4 +11,5 @@
     <color name="green">#8AC135</color>
     <color name="gray">#CCCCCC</color>
     <color name="divider">#30333A</color>
+    <color name="red">#f80000</color>
 </resources>
