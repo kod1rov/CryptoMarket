@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="21dp"
+    android:layout_marginBottom="12dp"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_card_crypto">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quiz_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="What Is Your Level Of Trading Experience?"/>
+
+        <TextView
+            android:id="@+id/quiz_question_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="10 questions"
+            android:alpha="0.5"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/quiz_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:text="5 min"
+        android:alpha="0.5"/>
+
+</LinearLayout>

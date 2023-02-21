@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray_200">#30333A</color>
+    <color name="gray_500">#252B37</color>
+    <color name="gray_700">#1B1D24</color>
+    <color name="teal_200">@android:color/transparent</color>
+    <color name="teal_700">@android:color/transparent</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_card">#1E2127</color>
+    <color name="green">#8AC135</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="divider">#30333A</color>
+</resources>

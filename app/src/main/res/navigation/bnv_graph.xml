@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bnv_graph"
+    app:startDestination="@id/watchListFragment">
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.cryptomarket.ui.news.NewsFragment"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_newsFragment_to_pageFragment"
+            app:destination="@id/pageFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.cryptomarket.ui.quiz.QuizFragment"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/watchListFragment"
+        android:name="com.example.cryptomarket.ui.watchList.WatchListFragment"
+        android:label="WatchListFragment" />
+    <fragment
+        android:id="@+id/pageFragment"
+        android:name="com.example.cryptomarket.ui.news.PageFragment"
+        android:label="fragment_page"
+        tools:layout="@layout/fragment_page">
+            <argument
+                android:name="newsData"
+                android:defaultValue="@null"
+                app:argType="com.example.cryptomarket.data.model.News"
+                app:nullable="true" />
+        </fragment>
+</navigation>
